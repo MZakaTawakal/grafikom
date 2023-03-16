@@ -1,0 +1,40 @@
+<html>
+    <body>
+
+        <canvas id="myCanvas" width="350" height="500" style="border:1px solid #000000;"></canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "10px Arial";
+            ctx.fillText("simpel", 10, 10);
+            ctx.beginPath();
+            ctx.arc(185, 235, 150, 0, 2 * Math.PI);
+            ctx.stroke();
+        </script>
+
+        <canvas id="myCanvas2" width="350" height="500" style="border:1px solid #000000;"></canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas2");
+            var ctx = c.getContext("2d");
+            ctx.font = "10px Arial";
+            ctx.fillText("Bresenham", 10, 10);
+            ctx.beginPath();
+            ctx.arc(185, 235, 150, 0, 2 * Math.PI);
+            ctx.stroke();
+        </script>
+
+        <canvas id="myCanvas3" width="350" height="500" style="border:1px solid #000000;"></canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas3");
+            var ctx = c.getContext("2d");
+            ctx.font = "10px Arial";
+            ctx.fillText("Mid-point", 10, 10);
+            ctx.beginPath();
+            ctx.arc(185, 235, 150, 0, 2 * Math.PI);
+            ctx.stroke();
+        </script>
+    </body>
+</html>
